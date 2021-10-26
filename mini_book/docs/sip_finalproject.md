@@ -9,9 +9,9 @@ With support from the [Dartmouth Center for Social Impact](https://students.dart
 
 ## Project motivation
 
-The START (Systemic, Therapeutic, Assessment, Resources, and Treatment) model at the University of New Hampshire is a comprehensive model of service supporting the optimization of independence, treatment, and community living for individuals with intellectual/developmental disabilities (IDD) and mental health needs. 
+The START (Systemic, Therapeutic, Assessment, Resources, and Treatment) model at the University of New Hampshire is a comprehensive model of service supporting the optimization of independence, treatment, and community living for individuals with intellectual/developmental disabilities (IDD) and mental health needs. Here is a website with more information about their work: [The Center for Start Services](https://centerforstartservices.org/)
 
-## Research process and possible broad research questions:
+## Data process and possible broad questions:
 
 ### 1. COVID-19 and changes in suicidal ideation: 
 
@@ -27,13 +27,9 @@ In addition to possible correlations with suicidal ideation, lockdowns might hav
 
 ### 3. Text Analysis and Uncovering Demographic or Regional Differences in Family Caregiver Experiences: 
 
-FEIS contains various open-ended responses that may cluster into themes. For instance, in response to questions about whether mental health professionals take the caregiver’s ideas and opinions into account and involve the caregiver in treatment, themes may cluster around (1) wanting a high degree of involvement but a lack of receptivity to that involvement by mental health professionals, (2) wanting a high degree of involvement and mental health professionals encouraging it, and other patterns. This project could involve (1) using automated text analysis methods to uncover themes in question responses and (2) examining how family demographics or things like the regional safety net support are correlated with those themes.
+START conducts semi-structured interviews with caregivers of participants using the [Family Experiences with Severe Mental Illness Scale (FEIS)](https://www.hsri.org/publication/Toolkit_on_Evaluating_Family_Experiences_with_Severe_Mental_Illness) . The FEIS contains various open-ended responses that may cluster into themes. For instance, in response to questions about whether mental health professionals take the caregiver’s ideas and opinions into account and involve the caregiver in treatment, themes may cluster around (1) wanting a high degree of involvement but a lack of receptivity to that involvement by mental health professionals, (2) wanting a high degree of involvement and mental health professionals encouraging it, and other patterns. This project could involve (1) using automated text analysis methods to uncover themes in question responses and (2) examining how family demographics or things like the regional safety net support are correlated with those themes.
 
 ## Logistics
 
 As described in the main section of the syllabus, you'll be split into assigned groups to work on sub-components of the project. We'll be working from the following common repo that you'll be added to, and have push/commit privileges for, when you're set up on GitHub.
 
-
-```
-
-```

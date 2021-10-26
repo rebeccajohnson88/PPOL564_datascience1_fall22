@@ -2,6 +2,8 @@
 
 Here is the current week-by-week schedule 📅 . We may adjust as we go along. To get started, we're going to create the calendar of weeks for the course programmatically rather than manually!
 
+The course will be offered in two distinct sessions, which will each follow the same schedule.
+
 
 ## import modules
 import pandas as pd
