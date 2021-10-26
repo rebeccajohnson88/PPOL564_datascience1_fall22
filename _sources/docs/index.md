@@ -1,4 +1,4 @@
-# QSS20. Modern Statistical Computing
+# QSS 20/PBPL 40.01 Modern Statistical Computing
 
 Social scientists are investigating questions that have led to two changes in their computing workflow.
 
@@ -8,12 +8,10 @@ The second change is the use of new methods to discern patterns in data. Imagine
 
 This course is meant to build upon your introductory programming course and to equip you with the computing literacy to conduct social science research in the age of "big data." This has two core components. First is learning the background tools (e.g.,[Git/Github](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners); [LaTeX](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes); working on the command line) to conduct transparent and reproducible research. Second is learning programming skills essential for social science in the big data era, with a focus on using Python for various applied tasks as well as R for tasks like data visualization and SQL for tasks like working with the relational databases that form the backbone of many real-world government and commercial datasets.
 
-
 ## Prerequisites 
 
 - *Required*: COSC 1, ENGS 20, or another programming course approved by the QSS Chair.
 - *Recommended*: introductory statistics course.
-
 
 ## Textbook v. DataCamp
 

@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Final Project: Social Impact Practicum" href="sip_finalproject.html" />
-    <link rel="prev" title="QSS20. Modern Statistical Computing" href="index.html" />
+    <link rel="prev" title="QSS 20/PBPL 40.01 Modern Statistical Computing" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -238,15 +238,15 @@
 
 <span class="c1">## create range b/t start and end date</span>
 <span class="c1">## of course </span>
-<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2021-03-29&quot;</span><span class="p">)</span>
-<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2021-06-02&quot;</span><span class="p">)</span>
+<span class="n">start_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2022-01-04&quot;</span><span class="p">)</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&quot;2022-03-08&quot;</span><span class="p">)</span>
 <span class="n">st_alldates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
 
 <span class="c1">## subset to days in that range equal to Tuesday or Thursday</span>
 <span class="n">st_tuth</span> <span class="o">=</span> <span class="n">st_alldates</span><span class="p">[</span><span class="n">st_alldates</span><span class="o">.</span><span class="n">day_name</span><span class="p">()</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">])]</span>
 
 <span class="c1">## create data frame with that information</span>
-<span class="n">st_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;2021</span><span class="se">\\</span><span class="s2">-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">day</span><span class="o">.</span><span class="n">date</span><span class="p">()))</span> <span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">st_tuth</span><span class="p">]</span> 
+<span class="n">st_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;2022</span><span class="se">\\</span><span class="s2">-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">day</span><span class="o">.</span><span class="n">date</span><span class="p">()))</span> <span class="k">for</span> <span class="n">day</span> <span class="ow">in</span> <span class="n">st_tuth</span><span class="p">]</span> 
 <span class="n">course_sched</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;dow&#39;</span><span class="p">:</span> <span class="n">st_tuth</span><span class="o">.</span><span class="n">day_name</span><span class="p">(),</span> <span class="s1">&#39;st_tuth&#39;</span><span class="p">:</span> <span class="n">st_dates</span><span class="p">})</span>
 <span class="n">course_sched</span><span class="p">[</span><span class="s1">&#39;date_toprint&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">course_sched</span><span class="o">.</span><span class="n">dow</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> \
             <span class="n">course_sched</span><span class="o">.</span><span class="n">st_tuth</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> 
@@ -262,25 +262,25 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 03-30
-1     Thursday 04-01
-2      Tuesday 04-06
-3     Thursday 04-08
-4      Tuesday 04-13
-5     Thursday 04-15
-6      Tuesday 04-20
-7     Thursday 04-22
-8      Tuesday 04-27
-9     Thursday 04-29
-10     Tuesday 05-04
-11    Thursday 05-06
-12     Tuesday 05-11
-13    Thursday 05-13
-14     Tuesday 05-18
-15    Thursday 05-20
-16     Tuesday 05-25
-17    Thursday 05-27
-18     Tuesday 06-01
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Tuesday 01-04
+1     Thursday 01-06
+2      Tuesday 01-11
+3     Thursday 01-13
+4      Tuesday 01-18
+5     Thursday 01-20
+6      Tuesday 01-25
+7     Thursday 01-27
+8      Tuesday 02-01
+9     Thursday 02-03
+10     Tuesday 02-08
+11    Thursday 02-10
+12     Tuesday 02-15
+13    Thursday 02-17
+14     Tuesday 02-22
+15    Thursday 02-24
+16     Tuesday 03-01
+17    Thursday 03-03
+18     Tuesday 03-08
 Name: date_toprint, dtype: object
 </pre></div>
 </div>
@@ -331,25 +331,25 @@ Name: date_toprint, dtype: object
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              Week                                           Concepts
-0    Tuesday 03-30          Course intro. and checking software setup
-1   Thursday 04-01  Workflow basics: command line, Github workflow...
-2    Tuesday 04-06                        Workflow basics (continued)
-3   Thursday 04-08  Python pandas review: aggregation, joins, lamb...
-4    Tuesday 04-13  Python pandas review: aggregation, joins, lamb...
-5   Thursday 04-15                       Problem set one work session
-6    Tuesday 04-20                                   Intro to merging
-7   Thursday 04-22                                              Regex
-8    Tuesday 04-27                   Probabilistic matching: part one
-9   Thursday 04-29                   Probabilistic matching: part two
-10   Tuesday 05-04                             Text as data: part one
-11  Thursday 05-06                             Text as data: part two
-12   Tuesday 05-11     Problem set two work session and intro to APIs
-13  Thursday 05-13                                     APIs continued
-14   Tuesday 05-18                       APIs continued; SQL part one
-15  Thursday 05-20                                       SQL part two
-16   Tuesday 05-25                         Final project work session
-17  Thursday 05-27              Scraping + final project work session
-18   Tuesday 06-01                                Final presentations
+0    Tuesday 01-04          Course intro. and checking software setup
+1   Thursday 01-06  Workflow basics: command line, Github workflow...
+2    Tuesday 01-11                        Workflow basics (continued)
+3   Thursday 01-13  Python pandas review: aggregation, joins, lamb...
+4    Tuesday 01-18  Python pandas review: aggregation, joins, lamb...
+5   Thursday 01-20                       Problem set one work session
+6    Tuesday 01-25                                   Intro to merging
+7   Thursday 01-27                                              Regex
+8    Tuesday 02-01                   Probabilistic matching: part one
+9   Thursday 02-03                   Probabilistic matching: part two
+10   Tuesday 02-08                             Text as data: part one
+11  Thursday 02-10                             Text as data: part two
+12   Tuesday 02-15     Problem set two work session and intro to APIs
+13  Thursday 02-17                                     APIs continued
+14   Tuesday 02-22                       APIs continued; SQL part one
+15  Thursday 02-24                                       SQL part two
+16   Tuesday 03-01                         Final project work session
+17  Thursday 03-03              Scraping + final project work session
+18   Tuesday 03-08                                Final presentations
 </pre></div>
 </div>
 </div>
@@ -448,118 +448,118 @@ Name: date_toprint, dtype: object
   </thead>
   <tbody>
     <tr>
-      <td>Tuesday 03-30</td>
+      <td>Tuesday 01-04</td>
       <td>Course intro. and checking software setup</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-01</td>
+      <td>Thursday 01-06</td>
       <td>Workflow basics: command line, Github workflow, basic LaTeX syntax, pre-analysis plans</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 04-06</td>
+      <td>Tuesday 01-11</td>
       <td>Workflow basics (continued)</td>
       <td>Data manipulation with Pandas</td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-08</td>
+      <td>Thursday 01-13</td>
       <td>Python pandas review: aggregation, joins, lambda and user-defined functions</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 04-13</td>
+      <td>Tuesday 01-18</td>
       <td>Python pandas review: aggregation, joins, lambda and user-defined functions</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-15</td>
+      <td>Thursday 01-20</td>
       <td>Problem set one work session</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 04-20</td>
+      <td>Tuesday 01-25</td>
       <td>Intro to merging</td>
       <td></td>
-      <td>Problem set one</td>
+      <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-22</td>
+      <td>Thursday 01-27</td>
       <td>Regex</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 04-27</td>
+      <td>Tuesday 02-01</td>
       <td>Probabilistic matching: part one</td>
       <td></td>
-      <td>Final project step 1</td>
+      <td></td>
     </tr>
     <tr>
-      <td>Thursday 04-29</td>
+      <td>Thursday 02-03</td>
       <td>Probabilistic matching: part two</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 05-04</td>
+      <td>Tuesday 02-08</td>
       <td>Text as data: part one</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-06</td>
+      <td>Thursday 02-10</td>
       <td>Text as data: part two</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 05-11</td>
+      <td>Tuesday 02-15</td>
       <td>Problem set two work session and intro to APIs</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-13</td>
+      <td>Thursday 02-17</td>
       <td>APIs continued</td>
       <td></td>
-      <td>Problem set two: part one</td>
+      <td></td>
     </tr>
     <tr>
-      <td>Tuesday 05-18</td>
+      <td>Tuesday 02-22</td>
       <td>APIs continued; SQL part one</td>
       <td></td>
-      <td>Problem set two: part two</td>
+      <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-20</td>
+      <td>Thursday 02-24</td>
       <td>SQL part two</td>
       <td></td>
-      <td>Final project step 2 (due Sunday 05.23 at 11:59 PM EST)</td>
+      <td></td>
     </tr>
     <tr>
-      <td>Tuesday 05-25</td>
+      <td>Tuesday 03-01</td>
       <td>Final project work session</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Thursday 05-27</td>
+      <td>Thursday 03-03</td>
       <td>Scraping + final project work session</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <td>Tuesday 06-01</td>
+      <td>Tuesday 03-08</td>
       <td>Final presentations</td>
       <td></td>
-      <td>Slides for final presentation (due Tuesday 06.01 at 5 PM EST)</td>
+      <td></td>
     </tr>
   </tbody>
 </table></div></div>
@@ -594,7 +594,7 @@ Name: date_toprint, dtype: object
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">QSS20. Modern Statistical Computing</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">QSS 20/PBPL 40.01 Modern Statistical Computing</a>
     <a class='right-next' id="next-link" href="sip_finalproject.html" title="next page">Final Project: Social Impact Practicum</a>
 
     </div>
