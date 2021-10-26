@@ -16,15 +16,15 @@ InteractiveShell.ast_node_interactivity = "all"
 
 ## create range b/t start and end date
 ## of course 
-start_date = pd.to_datetime("2021-03-29")
-end_date = pd.to_datetime("2021-06-02")
+start_date = pd.to_datetime("2022-01-04")
+end_date = pd.to_datetime("2022-03-08")
 st_alldates = pd.date_range(start_date, end_date)
 
 ## subset to days in that range equal to Tuesday or Thursday
 st_tuth = st_alldates[st_alldates.day_name().isin(['Tuesday', 'Thursday'])]
 
 ## create data frame with that information
-st_dates = [re.sub("2021\\-", "", str(day.date())) for day in st_tuth] 
+st_dates = [re.sub("2022\\-", "", str(day.date())) for day in st_tuth] 
 course_sched = pd.DataFrame({'dow': st_tuth.day_name(), 'st_tuth': st_dates})
 course_sched['date_toprint'] = course_sched.dow.astype(str) + " " + \
             course_sched.st_tuth.astype(str) 
@@ -143,3 +143,4 @@ df["Due (11:59 PM EST unless otherwise specified)"] = np.select(due_dates,
 
 
 HTML(df.to_html(index=False, escape = False))
+
