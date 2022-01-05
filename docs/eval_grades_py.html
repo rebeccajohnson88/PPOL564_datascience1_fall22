@@ -234,8 +234,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#two-problem-sets-25-of-grade-each-50-total">
-     Two problem sets (25% of grade, each; 50% total)
+    <a class="reference internal nav-link" href="#four-problem-sets-10-20-of-grade-each-50-total">
+     Four problem sets (10-20% of grade, each; 50% total)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -265,7 +265,7 @@
 <h1>Evaluation and grading<a class="headerlink" href="#evaluation-and-grading" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="summary-and-grading-policy">
 <h2>Summary and grading policy<a class="headerlink" href="#summary-and-grading-policy" title="Permalink to this headline">¶</a></h2>
-<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the problem set one and problem set two. Late days cannot be used for the final project or final presentation. If you run over and have not submitted the pset by the following Monday, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
+<p>You will have four cumulative late days for assignments, that can be apportioned as you see fit between the different problem sets. Late days cannot be used for the final project or final presentation. If you run over and have not submitted the pset by the following class, I ask that you not attend class as not to see the answers. There will be a deduction of 10 percentage points for each late day after you have used your allowed late days.</p>
 <p>Grades may be curved if there are no students receiving A’s on the non-curved grading scale.</p>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
@@ -276,7 +276,7 @@
 
 <span class="n">grade_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Assignments&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="s2">&quot;Datacamp modules&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Two problem sets&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Four problem sets&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Final project&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Team player/participation&quot;</span><span class="p">],</span>
                 <span class="s1">&#39;Percentage&#39;</span><span class="p">:</span>
@@ -286,9 +286,8 @@
                   <span class="mi">10</span><span class="p">],</span>
                 <span class="s1">&#39;Deadlines&#39;</span><span class="p">:</span>
                 <span class="p">[</span><span class="s2">&quot;Throughout&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Pset one: Thurs. 04-15; </span><span class="se">\</span>
-<span class="s2">                  Pset two: Thurs. 05-13 and Tues. 05-18&quot;</span><span class="p">,</span>
-                  <span class="s2">&quot;Presentation: Tuesday 06-01; Short report: Sunday 06-06&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Throughout&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Presentation: 3A/01 on Monday March 7; 6A/02 on Tuesday March 8 (X-hour); Short report: Monday March 14 (both sections)&quot;</span><span class="p">,</span>
                   <span class="s2">&quot;Throughout&quot;</span><span class="p">]})</span> 
 
 <span class="n">HTML</span><span class="p">(</span><span class="n">grade_summary</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -311,14 +310,14 @@
       <td>Throughout</td>
     </tr>
     <tr>
-      <td>Two problem sets</td>
+      <td>Four problem sets</td>
       <td>50</td>
-      <td>Pset one: Thurs. 04-15;                   Pset two: Thurs. 05-13 and Tues. 05-18</td>
+      <td>Throughout</td>
     </tr>
     <tr>
       <td>Final project</td>
       <td>35</td>
-      <td>Presentation: Tuesday 06-01; Short report: Sunday 06-06</td>
+      <td>Presentation: 3A/01 on Monday March 7; 6A/02 on Tuesday March 8 (X-hour); Short report: Monday March 14 (both sections)</td>
     </tr>
     <tr>
       <td>Team player/participation</td>
@@ -335,12 +334,12 @@
 <h3>Datacamp modules to support programming topics (5% of grade)<a class="headerlink" href="#datacamp-modules-to-support-programming-topics-5-of-grade" title="Permalink to this headline">¶</a></h3>
 <p>The DataCamp modules are mainly to support your work on the problem sets and final project by giving you additional practice prior to our in-class activities. As a result, they will be graded on a “complete” and “incomplete” basis, regardless of how many points you received on the assignment itself. This means that you shouldn’t get stuck partway through, since you can always ask to be shown the answer with a points deduction. Conversely, if the concepts are review, these should be very quick to complete, but if you’d prefer to skip, you can talk to me and I will reapportion the 5% to your second problem set.</p>
 </div>
-<div class="section" id="two-problem-sets-25-of-grade-each-50-total">
-<h3>Two problem sets (25% of grade, each; 50% total)<a class="headerlink" href="#two-problem-sets-25-of-grade-each-50-total" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="four-problem-sets-10-20-of-grade-each-50-total">
+<h3>Four problem sets (10-20% of grade, each; 50% total)<a class="headerlink" href="#four-problem-sets-10-20-of-grade-each-50-total" title="Permalink to this headline">¶</a></h3>
 <p>DataCamp provides a very smooth introduction to programming, in the sense that they provide you with example code that gets you ~80% of the way to the solution, with you needing to apply that code to reach the other ~20%.</p>
-<p>In contrast, the two problems sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in the DataCamp modules. More details on the problem sets will be provided the week before each is released,  but roughly, the workflow will be:</p>
+<p>In contrast, the problems sets will assess your ability to apply the concepts to data that is substantially messier, and problems that are substantially more difficult, than the ones in the DataCamp modules. More details on the problem sets will be provided the week before each is released,  but roughly, the workflow will be:</p>
 <ul class="simple">
-<li><p>Accessing the problem set and data via GitHub and/or jhub</p></li>
+<li><p>Accessing the problem set and data via Canvas (pset one) or GitHub and/or jhub (psets two - four)</p></li>
 <li><p>Working to produce the following outputs for each problem set:</p>
 <ul>
 <li><p>A raw .ipynb (or .Rmd file) with the code for the pset</p></li>
@@ -350,7 +349,7 @@
 </li>
 </ul>
 <p>The problem sets will be graded on both accuracy and programming style. For instance, by our second problem set, you will have learned to write functions. The problem set will be designed to test those concepts and if you revert, for instance, to writing repeated code that could be replaced with a function, points will be deducted even if that inefficient code arrives at the correct answer.</p>
-<p><strong>Collaboration</strong>: problem set one will be 80% group based and 20% individual (each person will submit a single problem set reflecting the work of the group for the first 80% and your own work for the individual problem). Problem set two will be fully individual. You should ask all questions on Slack in public channels and I may ask you to delete a post if it shows too much of a solution.</p>
+<p><strong>Collaboration</strong>: all problem sets will be individual. You can discuss high-level approaches to a problem with classmates but you cannot write code together, and if code appears that it was copied/pasted from one student to another, that can constitute an Honor Code violation. You should ask all questions on Slack in public channels but your question should not contain code or show too much of a solution. StackOverflow and other online resources are fine to consult and should be cited in comments.</p>
 </div>
 <div class="section" id="final-project-35-of-grade">
 <h3>Final project (35% of grade)<a class="headerlink" href="#final-project-35-of-grade" title="Permalink to this headline">¶</a></h3>
@@ -371,8 +370,8 @@
 <li><p>A set of code files that transform that data into a form usable to answer the question you have posed in your descriptive research proposal.</p></li>
 <li><p>Final output:</p>
 <ol class="simple">
-<li><p>A 10-minute presentation, written in Beamer (presented in class on <strong>Tuesday June 1st</strong>).</p></li>
-<li><p>A report written in the computer science-style conference proceedings (10 pages; will share a template; due <strong>Sunday June 6th</strong>).</p></li>
+<li><p>A 10-minute presentation, written in Beamer (presented in class on the dates listed above).</p></li>
+<li><p>A report written in the computer science-style conference proceedings (10 pages; will share a template; due <strong>Monday March 14th</strong>).</p></li>
 </ol>
 </li>
 </ul>
@@ -381,7 +380,13 @@
 </div>
 <div class="section" id="team-player-participation-10-of-grade">
 <h3>Team player/participation (10% of grade)<a class="headerlink" href="#team-player-participation-10-of-grade" title="Permalink to this headline">¶</a></h3>
-<p>We will be using a <code class="docutils literal notranslate"><span class="pre">#problemset</span></code> channel in our class Slack for you to ask questions about roadblocks you encounter with the DataCamp activities or on the problem sets. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions. Your participation grade will reflect whether you’ve helped your classmates on the forum and your participation in class.</p>
+<p>Data science is a highly collaborative activity in the real world and you should think of your classmates as resources rather than as competition. This part of your grade will reflect:</p>
+<ul class="simple">
+<li><p>Participation in class and help making the class interactive</p></li>
+<li><p>Participation in coding activities in class in small groups</p></li>
+<li><p>Contributions to your group’s final project</p></li>
+<li><p>Helping classmates on Slack: for this, we will be using a <code class="docutils literal notranslate"><span class="pre">#problemset</span></code> channel in our class Slack for you to ask questions about roadblocks you encounter with the DataCamp activities or on the problem sets. While I will be answering questions within a window of 24 hours, I encourage you to help each other and answer each other’s questions.</p></li>
+</ul>
 </div>
 </div>
 </div>
