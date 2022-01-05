@@ -33,5 +33,5 @@ START conducts semi-structured interviews with caregivers of participants using 
 
 ## Logistics
 
-As described in the main section of the syllabus, you'll be split into assigned groups to work on sub-components of the project. We'll be working from the following common repo that you'll be added to, and have push/commit privileges for, when you're set up on GitHub.
+As described in the main section of the syllabus, you'll be split into assigned groups to work on sub-components of the project. We'll be working from a common repo that you'll be added to, and have push/commit privileges for, when you're set up on GitHub.
 
