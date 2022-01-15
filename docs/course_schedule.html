@@ -114,11 +114,6 @@
    Dartmouth Policies
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="enrollment.html">
-   Enrollment and Waitlist
-  </a>
- </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -401,20 +396,20 @@
 <span class="n">concepts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Course intro. and checking software setup&quot;</span><span class="p">,</span>
              <span class="s2">&quot;Python pandas: aggregation, joins, lambda and user-defined functions&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Python pandas: aggregation, joins, lambda and user-defined functions (continued)&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;Problem set work session&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;MLK day (no class)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Workflow basics: command line/jhub, Github workflow&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Workflow basics (continued)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Intro to merging&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Regex&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Probabilistic matching: part one&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Probabilistic matching: part two&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;Text as data: part one&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Text as data: part one&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Text as data: part two&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Problem set 3/4 work session and intro to APIs&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Intro to APIs&quot;</span><span class="p">,</span>
              <span class="s2">&quot;APIs continued&quot;</span><span class="p">,</span>
              <span class="s2">&quot;APIs continued; SQL part one&quot;</span><span class="p">,</span>
              <span class="s2">&quot;SQL part two&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;Scraping (if time) + final project work session&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Basic web scraping (if time)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Interactive data viz. (if time)&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Final project work session&quot;</span><span class="p">,</span>
              <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
 
 <span class="c1">## check that concepts match number of weeks</span>
@@ -459,20 +454,20 @@
 0           Course intro. and checking software setup  
 1   Python pandas: aggregation, joins, lambda and ...  
 2   Python pandas: aggregation, joins, lambda and ...  
-3                            Problem set work session  
+3                                  MLK day (no class)  
 4   Workflow basics: command line/jhub, Github wor...  
-5                         Workflow basics (continued)  
-6                                    Intro to merging  
-7                                               Regex  
-8                    Probabilistic matching: part one  
-9                    Probabilistic matching: part two  
-10                             Text as data: part one  
-11                             Text as data: part two  
-12     Problem set 3/4 work session and intro to APIs  
-13                                     APIs continued  
-14                       APIs continued; SQL part one  
-15                                       SQL part two  
-16    Scraping (if time) + final project work session  
+5                                    Intro to merging  
+6                                               Regex  
+7                              Probabilistic matching  
+8                              Text as data: part one  
+9                              Text as data: part two  
+10                                      Intro to APIs  
+11                                     APIs continued  
+12                       APIs continued; SQL part one  
+13                                       SQL part two  
+14                       Basic web scraping (if time)  
+15                    Interactive data viz. (if time)  
+16                         Final project work session  
 17                                Final presentations  
 </pre></div>
 </div>
@@ -540,13 +535,13 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_col</span> <span class="o">=</span> <span class="s2">&quot;Week_3A&quot;</span>
 <span class="n">due_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 01-12&quot;</span><span class="p">,</span>
-            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 01-19&quot;</span><span class="p">,</span>
             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 01-26&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Monday 01-31&quot;</span><span class="p">,</span>
              <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 02-09&quot;</span><span class="p">,</span>
              <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 02-16&quot;</span><span class="p">,</span>
             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Monday 03-07&quot;</span><span class="p">]</span>
 <span class="n">assig</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Problem set one (due Sunday 01-16)&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;Problem set two (due Sunday 01-23)&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;Problem set two (due Wednesday 01-26)&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Final project step 1&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Problem set three (due Friday 02-11)&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Problem set four (due Friday 02-18)&quot;</span><span class="p">,</span>
@@ -602,7 +597,7 @@
     <tr>
       <td>Monday 01-17</td>
       <td>Monday 01-17</td>
-      <td>Problem set work session</td>
+      <td>MLK day (no class)</td>
       <td></td>
       <td></td>
     </tr>
@@ -611,89 +606,89 @@
       <td>Thursday 01-20</td>
       <td>Workflow basics: command line/jhub, Github workflow</td>
       <td></td>
-      <td>Problem set two (due Sunday 01-23)</td>
+      <td></td>
     </tr>
     <tr>
       <td>Monday 01-24</td>
       <td>Monday 01-24</td>
-      <td>Workflow basics (continued)</td>
-      <td></td>
+      <td>Intro to merging</td>
+      <td>Regular expressions for pattern matching</td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 01-26</td>
       <td>Thursday 01-27</td>
-      <td>Intro to merging</td>
-      <td>Regular expressions for pattern matching</td>
-      <td>Final project step 1</td>
+      <td>Regex</td>
+      <td></td>
+      <td>Problem set two (due Wednesday 01-26)</td>
     </tr>
     <tr>
       <td>Monday 01-31</td>
       <td>Monday 01-31</td>
-      <td>Regex</td>
+      <td>Probabilistic matching</td>
       <td></td>
-      <td></td>
+      <td>Final project step 1</td>
     </tr>
     <tr>
       <td>Wednesday 02-02</td>
       <td>Thursday 02-03</td>
-      <td>Probabilistic matching: part one</td>
+      <td>Text as data: part one</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Monday 02-07</td>
       <td>Monday 02-07</td>
-      <td>Probabilistic matching: part two</td>
+      <td>Text as data: part two</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 02-09</td>
       <td>Thursday 02-10</td>
-      <td>Text as data: part one</td>
+      <td>Intro to APIs</td>
       <td></td>
       <td>Problem set three (due Friday 02-11)</td>
     </tr>
     <tr>
       <td>Monday 02-14</td>
       <td>Monday 02-14</td>
-      <td>Text as data: part two</td>
+      <td>APIs continued</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 02-16</td>
       <td>Thursday 02-17</td>
-      <td>Problem set 3/4 work session and intro to APIs</td>
+      <td>APIs continued; SQL part one</td>
       <td></td>
       <td>Problem set four (due Friday 02-18)</td>
     </tr>
     <tr>
       <td>Monday 02-21</td>
       <td>Monday 02-21</td>
-      <td>APIs continued</td>
+      <td>SQL part two</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 02-23</td>
       <td>Thursday 02-24</td>
-      <td>APIs continued; SQL part one</td>
+      <td>Basic web scraping (if time)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Monday 02-28</td>
       <td>Monday 02-28</td>
-      <td>SQL part two</td>
+      <td>Interactive data viz. (if time)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 03-02</td>
       <td>Thursday 03-03</td>
-      <td>Scraping (if time) + final project work session</td>
+      <td>Final project work session</td>
       <td></td>
       <td></td>
     </tr>
