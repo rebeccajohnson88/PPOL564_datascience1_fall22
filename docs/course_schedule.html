@@ -406,8 +406,8 @@
             <span class="s2">&quot;Text as data: part two (continued)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;APIs (part 1)&quot;</span><span class="p">,</span>
              <span class="s2">&quot;APIs (twitter)&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;Supervised machine learning&quot;</span><span class="p">,</span>
              <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
-             <span class="s2">&quot;Supervised machine learning (if time)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Interactive data viz. or web scraping (if time)&quot;</span><span class="p">,</span>
              <span class="s2">&quot;Final project work session&quot;</span><span class="p">,</span>
              <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
@@ -464,8 +464,8 @@
 10                 Text as data: part two (continued)  
 11                                      APIs (part 1)  
 12                                     APIs (twitter)  
-13                                                SQL  
-14              Supervised machine learning (if time)  
+13                        Supervised machine learning  
+14                                                SQL  
 15    Interactive data viz. or web scraping (if time)  
 16                         Final project work session  
 17                                Final presentations  
@@ -500,10 +500,12 @@
 
 <span class="n">topics_trunc</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span>  <span class="s2">&quot;Python pandas: aggregation, joins, lambda and user-defined functions&quot;</span><span class="p">,</span>
                <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Intro to merging&quot;</span><span class="p">,</span>
-               <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">]</span>
+               <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">,</span>
+               <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Supervised machine learning&quot;</span><span class="p">]</span>
 <span class="n">datacamp_modules_trunc</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Data manipulation with Pandas&quot;</span><span class="p">,</span>
                           <span class="s2">&quot;Joining data with pandas&quot;</span><span class="p">,</span>
-                         <span class="s2">&quot;Regular expressions for pattern matching&quot;</span><span class="p">]</span>
+                         <span class="s2">&quot;Regular expressions for pattern matching&quot;</span><span class="p">,</span>
+                         <span class="s2">&quot;Supervised Learning with scikit-learn&quot;</span><span class="p">]</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataCamp module(s) (if any)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">topics_trunc</span><span class="p">,</span> 
                                      <span class="n">datacamp_modules_trunc</span><span class="p">,</span> 
@@ -539,17 +541,13 @@
 <span class="n">due_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 01-12&quot;</span><span class="p">,</span>
             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 01-26&quot;</span><span class="p">,</span>
              <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 02-09&quot;</span><span class="p">,</span>
-             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 02-16&quot;</span><span class="p">,</span>
              <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 02-23&quot;</span><span class="p">,</span>
-             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 03-02&quot;</span><span class="p">,</span>
             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Monday 03-07&quot;</span><span class="p">]</span>
 <span class="n">assig</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Problem set one (due Sunday 01-16)&quot;</span><span class="p">,</span>
          <span class="s2">&quot;Problem set two (due Friday 01-28)&quot;</span><span class="p">,</span>
         <span class="s2">&quot;Final project milestone 1 (due Wednesday 02-09);&lt;br&gt;Problem set three (due Friday 02-11)&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Problem set four (due Sunday 02-20)&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;Final project milestone 2 (due Friday 02-25) &quot;</span><span class="p">,</span>
-         <span class="s2">&quot;Problem set five (due Friday 03-05)&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Final project presentation (paper due on Monday 03-14)&quot;</span><span class="p">]</span>
+         <span class="s2">&quot;Problem set four (due Friday 02-25);&lt;br&gt;Final project milestone 2 (due Sunday 02-27) &quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set five (due Friday 03-11);&lt;br&gt;Final project presentation (paper due on Monday 03-14)&quot;</span><span class="p">]</span>
 
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">due_dates</span><span class="p">,</span>
@@ -666,21 +664,21 @@
       <td>Thursday 02-17</td>
       <td>APIs (twitter)</td>
       <td></td>
-      <td>Problem set four (due Sunday 02-20)</td>
+      <td></td>
     </tr>
     <tr>
       <td>Monday 02-21</td>
       <td>Monday 02-21</td>
-      <td>SQL</td>
-      <td></td>
+      <td>Supervised machine learning</td>
+      <td>Supervised Learning with scikit-learn</td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 02-23</td>
       <td>Thursday 02-24</td>
-      <td>Supervised machine learning (if time)</td>
+      <td>SQL</td>
       <td></td>
-      <td>Final project milestone 2 (due Friday 02-25)</td>
+      <td>Problem set four (due Friday 02-25);<br>Final project milestone 2 (due Sunday 02-27)</td>
     </tr>
     <tr>
       <td>Monday 02-28</td>
@@ -694,14 +692,14 @@
       <td>Thursday 03-03</td>
       <td>Final project work session</td>
       <td></td>
-      <td>Problem set five (due Friday 03-05)</td>
+      <td></td>
     </tr>
     <tr>
       <td>Monday 03-07</td>
       <td>Monday 03-07</td>
       <td>Final presentations</td>
       <td></td>
-      <td>Final project presentation (paper due on Monday 03-14)</td>
+      <td>Problem set five (due Friday 03-11);<br>Final project presentation (paper due on Monday 03-14)</td>
     </tr>
   </tbody>
 </table></div></div>
