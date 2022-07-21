@@ -2,7 +2,9 @@
 # Book settings
 title : PPOL 574/Data Science 1 Fall 2022
 author: Rebecca Johnson
+copyright: "2022"
 logo: 'laptop.png'
+exclude_patterns: [.DS_Store, "**.ipynb_checkpoints"]
 
 # Information about where the book exists on the web
 description: >-
@@ -16,7 +18,7 @@ execute:
 #######################################################################################
 # HTML-specific settings
 html:
-  home_page_in_navbar         : false
+  home_page_in_navbar         : true
 
 # #######################################################################################
 # Interact link settings
