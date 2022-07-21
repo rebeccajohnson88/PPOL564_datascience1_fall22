@@ -1,12 +1,12 @@
 #######################################################################################
 # Book settings
-title : QSS 20. Modern Statistical Computing
+title : PPOL 574/Data Science 1 Fall 2022
 author: Rebecca Johnson
 logo: 'laptop.png'
 
 # Information about where the book exists on the web
 description: >-
-  This is the course page for QSS20: Modern Statistical Computing. 
+  This is the syllabus for the fall 2022 PPOL 574/Data Science 1 at Georgetown's McCourt School of Public Policy. 
 
 #######################################################################################
 # Execution settings
