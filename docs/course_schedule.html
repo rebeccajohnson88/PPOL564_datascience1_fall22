@@ -57,7 +57,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Evaluation and grading" href="eval_grades_py.html" />
+    <link rel="next" title="Assignments, evaluation, and grading" href="eval_grades_py.html" />
     <link rel="prev" title="PPOL 564/Data Science 1 Fall 2022" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -108,7 +108,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="eval_grades_py.html">
-   Evaluation and grading
+   Assignments, evaluation, and grading
   </a>
  </li>
  <li class="toctree-l1">
@@ -384,9 +384,8 @@
             <span class="s2">&quot;DS grab bag: Intro to text as data&quot;</span><span class="p">,</span>
             <span class="s2">&quot;DS grab bag: APIs&quot;</span><span class="p">,</span>
             <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;DS grab bag: Intro to spatial data&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DS grab bag: Intro to spatial data; cluster computing&quot;</span><span class="p">,</span>
             <span class="s2">&quot;DS grab bag: Interactive data visualization&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;DS grab bag: cluster computing&quot;</span>
             <span class="s2">&quot;Final project work session&quot;</span><span class="p">,</span>
             <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
@@ -466,29 +465,32 @@
 </div>
 <div class="cell tag_hide_input docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># date_col = &quot;Week_3A&quot;</span>
-<span class="c1"># due_dates = [df[date_col] == &quot;Wednesday 01-12&quot;,</span>
-<span class="c1">#             df[date_col] == &quot;Wednesday 01-26&quot;,</span>
-<span class="c1">#              df[date_col] == &quot;Wednesday 02-09&quot;,</span>
-<span class="c1">#              df[date_col] == &quot;Wednesday 02-23&quot;,</span>
-<span class="c1">#             df[date_col] == &quot;Monday 03-07&quot;]</span>
-<span class="c1"># assig = [&quot;Problem set one (due Sunday 01-16)&quot;,</span>
-<span class="c1">#          &quot;Problem set two (due Friday 01-28)&quot;,</span>
-<span class="c1">#         &quot;Final project milestone 1 (due Wednesday 02-09);&lt;br&gt;Problem set three (due Friday 02-11)&quot;,</span>
-<span class="c1">#          &quot;Problem set four (due Friday 02-25);&lt;br&gt;Final project milestone 2 (due Sunday 02-27) &quot;,</span>
-<span class="c1">#         &quot;Problem set five (due Friday 03-11);&lt;br&gt;Final project presentation (paper due on Monday 03-14)&quot;]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">course_sched</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">date_col</span> <span class="o">=</span> <span class="s2">&quot;Date&quot;</span>
+<span class="n">due_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 08-31&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 09-14&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 09-21&quot;</span><span class="p">,</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 10-12&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 10-26&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 11-09&quot;</span><span class="p">]</span>
+<span class="n">assig</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Problem set one (due Friday 09-02 at 11:59 PM)&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;Problem set two (due Friday 09-16 at 11:59 PM)&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;Problem set three (due Friday 09-23 at 11:59 PM)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set four (due Friday 10-15 at 11:59 PM)&quot;</span><span class="p">,</span>
+         <span class="s2">&quot;Problem set five (due Friday 10-28 at 11:59 PM)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set six (due Friday 11-11 at 11:59 PM)&quot;</span><span class="p">]</span>
 
 
-<span class="c1"># df[&quot;Due (11:59 PM EST unless otherwise specified)&quot;] = np.select(due_dates,</span>
-<span class="c1">#                      assig,</span>
-<span class="c1">#                      default = &quot;&quot;)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">due_dates</span><span class="p">,</span>
+                     <span class="n">assig</span><span class="p">,</span>
+                     <span class="n">default</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">course_sched</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">escape</span> <span class="o">=</span> <span class="kc">False</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">escape</span> <span class="o">=</span> <span class="kc">False</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -499,6 +501,7 @@
       <th>Date</th>
       <th>Week</th>
       <th>Concepts</th>
+      <th>Due (11:59 PM EST unless otherwise specified)</th>
     </tr>
   </thead>
   <tbody>
@@ -506,76 +509,91 @@
       <td>Wednesday 08-24</td>
       <td>Week 1</td>
       <td>Course intro., checking software setup, and python basics (variables, lists, numpy arrays)</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 08-31</td>
       <td>Week 2</td>
       <td>Pandas for python-based data manipulation (part one) + static data visualization</td>
+      <td>Problem set one (due Friday 09-02 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 09-07</td>
       <td>Week 3</td>
       <td>Pandas for python-based data manipulation (part two)</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 09-14</td>
       <td>Week 4</td>
       <td>Workflow basics: command line, git/GitHub</td>
+      <td>Problem set two (due Friday 09-16 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 09-21</td>
       <td>Week 5</td>
       <td>Merging data</td>
+      <td>Problem set three (due Friday 09-23 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 09-28</td>
       <td>Week 6</td>
       <td>Regex</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 10-05</td>
       <td>Week 7</td>
       <td>Probabilistic matching</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 10-12</td>
       <td>Week 8</td>
       <td>DS grab bag: Intro to text as data</td>
+      <td>Problem set four (due Friday 10-15 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 10-19</td>
       <td>Week 9</td>
       <td>DS grab bag: APIs</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 10-26</td>
       <td>Week 10</td>
       <td>SQL</td>
+      <td>Problem set five (due Friday 10-28 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 11-02</td>
       <td>Week 11</td>
-      <td>DS grab bag: Intro to spatial data</td>
+      <td>DS grab bag: Intro to spatial data; cluster computing</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 11-09</td>
       <td>Week 12</td>
       <td>DS grab bag: Interactive data visualization</td>
+      <td>Problem set six (due Friday 11-11 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 11-16</td>
       <td>Week 13</td>
-      <td>DS grab bag: cluster computingFinal project work session</td>
+      <td>Final project work session</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 11-23</td>
       <td>Fall Recess</td>
       <td>N/A</td>
+      <td></td>
     </tr>
     <tr>
       <td>Wednesday 11-30</td>
       <td>Week 14</td>
       <td>Final presentations</td>
+      <td></td>
     </tr>
   </tbody>
 </table></div></div>
@@ -611,7 +629,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="index.html" title="previous page">PPOL 564/Data Science 1 Fall 2022</a>
-    <a class='right-next' id="next-link" href="eval_grades_py.html" title="next page">Evaluation and grading</a>
+    <a class='right-next' id="next-link" href="eval_grades_py.html" title="next page">Assignments, evaluation, and grading</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

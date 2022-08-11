@@ -42,7 +42,7 @@ The course will have two outstanding TAs to serve as additional resources:
 ## Course policies
 
 - **Attendance policies**: we will take attendance and it will be factored into your participation/"team player" grade; as described at this page, that grade will include classroom participation, participation on Slack, and group project contributions. 
-- **Late assignment policies**: see the assignments page
+- **Late assignment policies**: see [this evaluation/grading page](https://rebeccajohnson88.github.io/PPOL564_datascience1_fall22/docs/eval_grades_py.html)
 - **Canvas site**: A Canvas course site is set up for this course. While this Jupyter book contains details of the assignments, Canvas will contain specific deadlines and course announcements. Students can access the course site at http://canvas.georgetown.edu/. Support for Canvas is available at 202-687-4949. 
 - **Other setup**: see this page for setup notes for Python [software setup](software_setup).
 
