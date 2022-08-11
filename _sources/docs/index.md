@@ -21,7 +21,7 @@ decision-making and analysis. No prior programming experience is assumed or requ
 
 ### Instructor
 
-- PROFESSOR: [Dr. Rebecca A. Johnson](www.rebeccajohnson.io)
+- PROFESSOR: [Dr. Rebecca A. Johnson](https://www.rebeccajohnson.io)
 - EMAIL (please put PPOL564 in subject line): [rj545@georgetown.edu](mailto:rj545@georgetown.edu)
 - OFFICE HOURS: 
     - Tuesdays: 1030 AM - 1130 AM
@@ -35,7 +35,7 @@ The course will have two outstanding TAs to serve as additional resources:
 
 - Sonali S.R. [ss4608@georgetown.edu](mailto:ss4608@georgetown.edu) 
     - Office hours: TBD
-- Yifan Liu [ss4608@georgetown.edu](mailto:yl1374@georgetown.edu)
+- Yifan Liu [yl1374@georgetown.edu](mailto:yl1374@georgetown.edu)
     - Office hours: TBD
 
 
