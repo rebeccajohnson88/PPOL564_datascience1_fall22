@@ -21,21 +21,21 @@ decision-making and analysis. No prior programming experience is assumed or requ
 
 ### Instructor
 
-- PROFESSOR: Dr. Rebecca A. Johnson
-- EMAIL: rj545@georgetown.edu
+- PROFESSOR: [Dr. Rebecca A. Johnson](www.rebeccajohnson.io)
+- EMAIL (please put PPOL564 in subject line): [rj545@georgetown.edu](mailto:rj545@georgetown.edu)
 - OFFICE HOURS: 
     - Tuesdays: 1030 AM - 1130 AM
     - Thursdays: 1030 AM - 1200 PM
-- SIGN UP: sign up for in-person meeting or Zoom meeting using [this calendly link](https://calendly.com/rebeccajohnsonmtg). The slots are in increments of 15 minutes but feel free to sign up for multiple if you think you'll need more time.
+- SIGN UP: sign up for in-person meeting or Zoom meeting using [this calendly link](https://calendly.com/rebeccajohnsonmtg) and clicking on one of the PPOL564 options (in person or virtual). The slots are in increments of 15 minutes but feel free to sign up for multiple if you think you'll need more time.
 - LOCATION IF IN PERSON: Maguire Hall; room G-05H - basement near MDI; can enter through Healy Hall
 
 ### TAs
 
 The course will have two outstanding TAs to serve as additional resources:
 
-- Sonali S.R. (ss4608@georgetown.edu) 
+- Sonali S.R. [ss4608@georgetown.edu](mailto:ss4608@georgetown.edu) 
     - Office hours: TBD
-- Yifan Liu (yl1374@georgetown.edu)
+- Yifan Liu [ss4608@georgetown.edu](mailto:yl1374@georgetown.edu)
     - Office hours: TBD
 
 
@@ -44,7 +44,7 @@ The course will have two outstanding TAs to serve as additional resources:
 - **Attendance policies**: we will take attendance and it will be factored into your participation/"team player" grade; as described at this page, that grade will include classroom participation, participation on Slack, and group project contributions. 
 - **Late assignment policies**: see the assignments page
 - **Canvas site**: A Canvas course site is set up for this course. While this Jupyter book contains details of the assignments, Canvas will contain specific deadlines and course announcements. Students can access the course site at http://canvas.georgetown.edu/. Support for Canvas is available at 202-687-4949. 
-- **Other setup**: see this page for setup notes for Python {doc}`software_setup.md`
+- **Other setup**: see this page for setup notes for Python [software setup](software_setup).
 
 
 ## Required Reading
