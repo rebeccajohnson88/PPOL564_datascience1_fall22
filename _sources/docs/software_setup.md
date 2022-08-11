@@ -30,14 +30,21 @@ We will be using the following tools in the course:
 We won't be using a non-online LaTeX editor, but you can find information on installing those by googling "how to install LaTeX" and some popular editors include TeXworks and LaTeXiT.
 
 
-## Python
+## Python (by first class session)
 
-Please download Python 3.8+ (if compatible with your OS) or Python 3.7 through the Anaconda distribution system linked to below. 3.8+ is strongly preferred due to compatibility between pkl files
+Please download Python 3.9+ (if compatible with your OS) or an earlier version if you have an older operating system through the Anaconda distribution system linked to below. 3.8+ rather than 3.7 is strongly preferred due to compatibility between pkl files
 
-[https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)
+- Site to go to: [https://www.anaconda.com/products/individual](https://www.anaconda.com/products/individual)
+- Click on the following button (shows Mac by default on my computer but you can install on Windows or Linux)
 
+```{image} ../images/anaconda_downloadlink.png
+:alt: local terminal example
+:class: bg-primary mb-1
+:width: 500px
+:align: center
+```
 
-## Terminal/terminal emulator
+## Terminal/terminal emulator (by second class session)
 
 
 **Why do I need this?** in the course, we’ll be reviewing basic "command line" syntax. Knowing this is needed for:
@@ -73,7 +80,7 @@ A couple popular ones are:
 - [https://www.cygwin.com/](https://www.cygwin.com/): cygwin operates a bit weirdly when, upon first install, you need to check the packages that you want installed. I recommend checking screen.
 
 
-## Git/GitHub
+## Git/GitHub (by second class session)
 
 We'll go over more Git/GitHub instructions during the relevant class session. Before that session:
 
@@ -81,7 +88,7 @@ We'll go over more Git/GitHub instructions during the relevant class session. Be
 
 2. Create a GitHub account if you don't have one already (any email and free subscription is fine): [https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
 
-## Text editor
+## Text editor (by second class session)
 
 **Why do I need this?** for longer-running code, a workflow might be:
 
