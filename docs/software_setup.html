@@ -57,6 +57,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Georgetown Policies" href="georgetown_policies.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -102,6 +103,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="course_schedule.html">
    Course schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="georgetown_policies.html">
+   Georgetown Policies
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Software setup
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Overview of tools
   </a>
  </li>
 </ul>
@@ -195,20 +213,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jhub">
-   Jhub
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-content-added-to-the-github-repo-to-appear">
-     Getting content added to the GitHub repo to appear
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#local-python">
-   Local Python
+  <a class="reference internal nav-link" href="#python">
+   Python
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -253,44 +259,17 @@
 <span id="software-setup"></span><h1>Overview of tools<a class="headerlink" href="#overview-of-tools" title="Permalink to this headline">¶</a></h1>
 <p>We will be using the following tools in the course:</p>
 <ul class="simple">
-<li><p><strong>Course announcements and communication</strong>: Slack. You can join by going to the Canvas course page, following these instructions to get Slack icon to appear (https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=115062), and joining the course workspace. We will be adding channels as the course goes along, but current ones to join are:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">#pythonhelp_general</span></code>: this channel can be used for general python questions, and we’ll also have problem set specific channels.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">#datacamp_questions</span></code>: these are questions about DataCamp, esp. about making sure your account is set up.</p></li>
-</ul>
-</li>
-<li><p><strong>Remote computing environment (for shorthand: jhub)</strong>: <a class="reference external" href="https://itc.dartmouth.edu/people/arnold-song">Arnold Song in Dartmouth’s Research Computing</a> will be setting up a dedicated course server on Dartmouth’s jupyter hub. This allows you to open up any browser (chrome; firefox) etc. and complete Python tutorials without needing to download data or files locally / deal with package installation issues. More details on the server are below.</p></li>
+<li><p><strong>Course announcements</strong>: Canvas</p></li>
+<li><p><strong>Questions on problem sets</strong>: we will be using Slack for you to pose questions to the TAs outside of office hours. You can join the Slack using your &#64;georgetown.edu email at this link: <a class="reference external" href="https://join.slack.com/t/ppol564datasc-sgo8936/shared_invite/zt-1e22ol7s6-_HQgOhIi6HpNo4x3JUo_Fw">Slack link</a></p></li>
 <li><p><strong>Locally-installed python (for shorthand: local python)</strong>: eventually, you’ll leave the course and Dartmouth and need to know how to use Python locally. So in addition to jhub, I’m asking you to install the necessary software to run things locally: Python 3.8+ via the Anaconda distribution system</p></li>
 <li><p><strong>Terminal/terminal emulator</strong>: mainly for interfacing with Git/GitHub. See instructions below for installation.</p></li>
-<li><p><strong>Git/GitHub</strong>: one of the course goals is to get you more familiar with using Git/GitHub for version control. You can interact with GitHub both from the jhub remote environment and from your local machine. Instructions below for each and we’ll have an in-class activity where you create your own repo and add me as a collaborator.</p></li>
+<li><p><strong>Git/GitHub</strong>: one of the course goals is to get you more familiar with using Git/GitHub for version control. Instructions are below and we’ll have an in-class activity where you create your own repo and add me as a collaborator.</p></li>
 <li><p><strong>LaTeX/Overleaf</strong>: we’ll be using the LaTeX typesetting software to (1) integrate writing and formulae, (2) more cleanly integrate figures into writeups. We’ll be interacting with LaTeX through Overleaf, so please create an account at this link (can link to your Dartmouth email or general gmail/email if you want access over time): <a class="reference external" href="https://www.overleaf.com/learn/how-to/Can_I_try_Overleaf_without_signing_up%3F">https://www.overleaf.com/learn/how-to/Can_I_try_Overleaf_without_signing_up%3F</a>.</p></li>
 </ul>
 <p>We won’t be using a non-online LaTeX editor, but you can find information on installing those by googling “how to install LaTeX” and some popular editors include TeXworks and LaTeXiT.</p>
-<div class="section" id="jhub">
-<h2>Jhub<a class="headerlink" href="#jhub" title="Permalink to this headline">¶</a></h2>
-<p>Here are the instructions that will be relevant once JHUB is activated (~ week of January 10th):</p>
-<p><strong>Step one</strong>: Navigate to: <a class="reference external" href="https://jhub.dartmouth.edu/">jhub.dartmouth.edu</a> while logged in with your Dartmouth netid. If you’re off campus, you may need to connect to Dartmouth VPN (<a class="reference external" href="https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=66806">instructions here and email Dartmouth IT about issues</a>). You should see an option for a course. Click on it and the server will start up (takes 20-30 seconds)</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub1.png"><img alt="jhub 1" class="bg-primary mb-1 align-center" src="../_images/jhub1.png" style="width: 500px;" /></a>
-<p><strong>Step two</strong>: Navigate to the folder for qss20 if you want to work outside the class’ shared space and create your own file:</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub2.png"><img alt="jhub 2" class="bg-primary mb-1 align-center" src="../_images/jhub2.png" style="width: 500px;" /></a>
-<p><strong>Step three</strong>: To open up a notebook from scratch, click <code class="docutils literal notranslate"><span class="pre">new</span></code> on the top right and start a new python3 notebook/kernel by clicking <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code>. Make sure to give it a name:</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/jhub3.png"><img alt="jhub 3" class="bg-primary mb-1 align-center" src="../_images/jhub3.png" style="width: 300px;" /></a>
-<p><strong>Step four</strong>: If interfacing with GitHub from jhub, to open a terminal, click on the <code class="docutils literal notranslate"><span class="pre">terminal</span></code> in that same top right menu and a terminal that works similarly to your local one should appear that uses same syntax:</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../_images/terminal.png"><img alt="jhub terminal menu" class="bg-primary mb-1 align-center" src="../_images/terminal.png" style="width: 300px;" /></a>
-<p>We’re going to mainly focus on interfacing with GitHub from your local comp. so don’t worry too much about the remote terminal for now.</p>
-<div class="section" id="getting-content-added-to-the-github-repo-to-appear">
-<h3>Getting content added to the GitHub repo to appear<a class="headerlink" href="#getting-content-added-to-the-github-repo-to-appear" title="Permalink to this headline">¶</a></h3>
-<p>Content that I create for you guys (slides; in-class activities) should automatically populate into the following directory: <code class="docutils literal notranslate"><span class="pre">shared/qss20</span></code>. However, you might need to restart your server for the content to populate using the following steps:</p>
-<ul class="simple">
-<li><p>Click the “Control Panel” button in the upper right corner</p></li>
-<li><p>Then click “Stop My Server”</p></li>
-<li><p>Then, click “Start My Server”</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="local-python">
-<h2>Local Python<a class="headerlink" href="#local-python" title="Permalink to this headline">¶</a></h2>
-<p>Please download Python 3.8+ (if compatible with your OS) or Python 3.7 through the Anaconda distribution system. 3.8+ is strongly preferred due to compatibility between pkl files</p>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p>Please download Python 3.8+ (if compatible with your OS) or Python 3.7 through the Anaconda distribution system linked to below. 3.8+ is strongly preferred due to compatibility between pkl files</p>
 <p><a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></p>
 </div>
 <div class="section" id="terminal-terminal-emulator">
@@ -383,6 +362,7 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="georgetown_policies.html" title="previous page">Georgetown Policies</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
