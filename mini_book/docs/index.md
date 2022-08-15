@@ -21,7 +21,7 @@ decision-making and analysis. No prior programming experience is assumed or requ
 
 ### Instructor
 
-- PROFESSOR: [Dr. Rebecca A. Johnson](www.rebeccajohnson.io)
+- PROFESSOR: [Dr. Rebecca A. Johnson](https://www.rebeccajohnson.io)
 - EMAIL (please put PPOL564 in subject line): [rj545@georgetown.edu](mailto:rj545@georgetown.edu)
 - OFFICE HOURS: 
     - Tuesdays: 1030 AM - 1130 AM
@@ -34,9 +34,13 @@ decision-making and analysis. No prior programming experience is assumed or requ
 The course will have two outstanding TAs to serve as additional resources:
 
 - Sonali S.R. [ss4608@georgetown.edu](mailto:ss4608@georgetown.edu) 
-    - Office hours: TBD
-- Yifan Liu [ss4608@georgetown.edu](mailto:yl1374@georgetown.edu)
-    - Office hours: TBD
+    - Office hours: 
+        - Wednesdays: 3-4 PM (in same classroom)
+        - Fridays: 130-3 pm (Zoom drop in here: [https://georgetown.zoom.us/j/92361534376](https://georgetown.zoom.us/j/92361534376))
+- Yifan Liu [yl1374@georgetown.edu](mailto:yl1374@georgetown.edu)
+    - Office hours: 
+        - Sundays 7-8 pm (Calendly sign up: [https://calendly.com/yl1374/15min](https://calendly.com/yl1374/15min))
+        - Tuesdays: 330-5 pm (Calendly sign up: [https://calendly.com/yl1374/15min](https://calendly.com/yl1374/15min))
 
 
 ## Course policies
@@ -51,7 +55,7 @@ The course will have two outstanding TAs to serve as additional resources:
 
 - **Is there a textbook?** There is no textbook. For specific programming questions, DataCamp videos will give good introductions to the concepts and then stackoverflow/various online resources help fill in the gaps. 
 
-- **What is a DataCamp module and how will I keep track of them?** A module in DataCamp consists of two components. First is a short introductory video to a concept like writing a loop (which you can click through if you already know the concept). Next is a series of tasks where they'll ask you to write code to do something, you submit, and you can progress to the next task when your code successfully does what it's supposed to. To keep track of them, we have a course page hosted within DataCamp that you will sign up for with your Dartmouth email. 
+- **What is a DataCamp module and how will I keep track of them?** A module in DataCamp consists of two components. First is a short introductory video to a concept like writing a loop (which you can click through if you already know the concept). Next is a series of tasks where they'll ask you to write code to do something, you submit, and you can progress to the next task when your code successfully does what it's supposed to. To keep track of them, we have a course page hosted within DataCamp that you will sign up for with your Georgetown email. 
 
 All modules given as assignments will be assigned on that page. As a result, the course schedule gives the module's general name. The modules should be completed *before* the corresponding class, so that you can more easily work on the in-class activity. 
 
