@@ -35,12 +35,24 @@ The course will have two outstanding TAs to serve as additional resources:
 
 - Sonali S.R. [ss4608@georgetown.edu](mailto:ss4608@georgetown.edu) 
     - Office hours: 
-        - Wednesdays: 3-4 PM (in same classroom)
+        - Wednesdays: 3-4 PM (in Old North)
         - Fridays: 130-3 pm (Zoom drop in here: [https://georgetown.zoom.us/j/92361534376](https://georgetown.zoom.us/j/92361534376))
 - Yifan Liu [yl1374@georgetown.edu](mailto:yl1374@georgetown.edu)
     - Office hours: 
         - Sundays 7-8 pm (Calendly sign up: [https://calendly.com/yl1374/15min](https://calendly.com/yl1374/15min))
-        - Tuesdays: 330-5 pm (Calendly sign up: [https://calendly.com/yl1374/15min](https://calendly.com/yl1374/15min))
+        - Tuesdays: 415-530 pm (Calendly sign up: [https://calendly.com/yl1374/15min](https://calendly.com/yl1374/15min))
+        
+### Day by day office hours summary
+
+- **Sundays:** Yifan 7-8 pm
+- **Mondays:** none
+- **Tuesdays:** 
+     - **Prof:** 10:30-11:30 AM
+     - **Yifan:** 4:15-5:30 PM
+- **Wednesdays:** Sonali ~3-4 PM
+- **Thursdays:** Prof 10:30-12:00 PM
+- **Fridays:** Sonali 1:30-3:00 PM
+
 
 
 ## Course policies
