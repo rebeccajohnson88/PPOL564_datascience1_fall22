@@ -382,11 +382,11 @@
             <span class="s2">&quot;Review session&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Merging data&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Regex&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Probabilistic matching&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;DS grab bag: Intro to text as data&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DS grab bag: Intro to text as data (text mining)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DS grab bag: Intro to text as data (topic modeling)&quot;</span><span class="p">,</span>
             <span class="s2">&quot;DS grab bag: APIs&quot;</span><span class="p">,</span>
             <span class="s2">&quot;SQL&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;DS grab bag: Intro to spatial data; cluster computing; interactive data visualization&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Recorded lecture (optional in class work session): probabilistic record linkage; geospatial visualization; supervised ML&quot;</span><span class="p">,</span>
             <span class="s2">&quot;N/A&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Final presentations&quot;</span><span class="p">]</span>
 
@@ -469,10 +469,16 @@
 <span class="n">date_col</span> <span class="o">=</span> <span class="s2">&quot;Date&quot;</span>
 <span class="n">due_dates</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 08-31&quot;</span><span class="p">,</span>
              <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 09-14&quot;</span><span class="p">,</span>
-             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 10-05&quot;</span><span class="p">]</span>
+             <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 10-05&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 10-19&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 11-02&quot;</span><span class="p">,</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">date_col</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Wednesday 11-16&quot;</span><span class="p">]</span>
 <span class="n">assig</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Problem set one (due Friday 09-02 at 11:59 PM)&quot;</span><span class="p">,</span>
          <span class="s2">&quot;Problem set two (due Friday 09-16 at 11:59 PM)&quot;</span><span class="p">,</span>
-         <span class="s2">&quot;Problem set three (due Wednesday 10-05 at 11:59 PM)&quot;</span><span class="p">]</span>
+         <span class="s2">&quot;Problem set three (due Wednesday 10-05 at 11:59 PM)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set four (due Friday 10-21 at 11:59 PM)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set five (due Monday 11-07 at 11:59 PM)&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Problem set six (due Friday 11-18 at 11:59 PM)&quot;</span><span class="p">]</span>
 
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Due (11:59 PM EST unless otherwise specified)&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">due_dates</span><span class="p">,</span>
@@ -550,20 +556,20 @@
     <tr>
       <td>Wednesday 10-19</td>
       <td>Week 9</td>
-      <td>Probabilistic matching</td>
-      <td></td>
+      <td>DS grab bag: Intro to text as data (text mining)</td>
+      <td>Problem set four (due Friday 10-21 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 10-26</td>
       <td>Week 10</td>
-      <td>DS grab bag: Intro to text as data</td>
+      <td>DS grab bag: Intro to text as data (topic modeling)</td>
       <td></td>
     </tr>
     <tr>
       <td>Wednesday 11-02</td>
       <td>Week 11</td>
       <td>DS grab bag: APIs</td>
-      <td></td>
+      <td>Problem set five (due Monday 11-07 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 11-09</td>
@@ -574,8 +580,8 @@
     <tr>
       <td>Wednesday 11-16</td>
       <td>Week 13</td>
-      <td>DS grab bag: Intro to spatial data; cluster computing; interactive data visualization</td>
-      <td></td>
+      <td>Recorded lecture (optional in class work session): probabilistic record linkage; geospatial visualization; supervised ML</td>
+      <td>Problem set six (due Friday 11-18 at 11:59 PM)</td>
     </tr>
     <tr>
       <td>Wednesday 11-23</td>
